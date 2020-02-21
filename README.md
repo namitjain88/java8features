@@ -14,3 +14,9 @@ Use of Optional helps avoid NullPointerException and unnecessary null checks. It
 * Optional.filter(Predicate p) to filter optional object using given predicate and return either Optional of object or Optional.empty
 * Optional.map(Function f) to perform operations on Optional<Object> and return it
 * Optional.flatMap(Function f) is used to get to an Optional<Object> in another Optional<Object>. Calling this method returns inner Optional<Object>
+
+# default and static methods in interfaces
+* Before java8 it wasn't possible to add new methods to existing interface because doing that would break implementing classes.
+* default methods in interfaces overcame the problem by having default implementation in interfaces itself
+* default methods can still be overridden by implementing class
+
