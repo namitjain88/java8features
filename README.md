@@ -9,3 +9,5 @@ Use of Optional helps avoid NullPointerException and unnecessary null checks. It
 * Optional.orElse(Default T) method to return default value T if input T is null
 * Optional.orElseGet(Supplier s) to return default value if null; it takes supplier as an input
 * Optional.orElseThrow(Supplier s) to throw a RuntimeException if null; it takes supplier as an input
+* Optional.isPresent() returns true if Optional object is not empty/null, false otherwise
+* Optional.ifPresent(Consumer c) to perform operations if Optional is not empty.
