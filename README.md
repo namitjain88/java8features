@@ -11,3 +11,5 @@ Use of Optional helps avoid NullPointerException and unnecessary null checks. It
 * Optional.orElseThrow(Supplier s) to throw a RuntimeException if null; it takes supplier as an input
 * Optional.isPresent() returns true if Optional object is not empty/null, false otherwise
 * Optional.ifPresent(Consumer c) to perform operations if Optional is not empty.
+* Optional.filter(Predicate p) to filter optional object using given predicate and return either Optional of object or Optional.empty
+* Optional.map(Function f) to perform operations on Optional<Object> and return it
