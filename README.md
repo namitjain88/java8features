@@ -13,3 +13,4 @@ Use of Optional helps avoid NullPointerException and unnecessary null checks. It
 * Optional.ifPresent(Consumer c) to perform operations if Optional is not empty.
 * Optional.filter(Predicate p) to filter optional object using given predicate and return either Optional of object or Optional.empty
 * Optional.map(Function f) to perform operations on Optional<Object> and return it
+* Optional.flatMap(Function f) is used to get to an Optional<Object> in another Optional<Object>. Calling this method returns inner Optional<Object>
